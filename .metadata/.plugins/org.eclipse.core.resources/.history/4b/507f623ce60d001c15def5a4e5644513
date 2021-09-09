@@ -1,0 +1,28 @@
+package demo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class SteamTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> l=new ArrayList<Integer>();
+		l.add(10);
+		l.add(15);
+		l.add(25);
+		l.add(65);
+		l.add(45);
+		l.add(35);
+		
+		Integer max=l.stream().max((i, j)->i<j?1:i>j?-1:0).get();
+		System.out.println("maximun no is "+max);
+		
+		List<Integer> l2=l.stream().sorted().collect(Collectors.toList());
+		System.out.println("highest no is "+l2.get(l2.size()-1));
+		
+		
+	}
+
+}

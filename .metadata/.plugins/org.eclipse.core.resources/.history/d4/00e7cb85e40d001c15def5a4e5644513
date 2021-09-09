@@ -1,0 +1,42 @@
+package demo;
+
+public class Nonrepeating {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Integer[] number={20,25,20,10,12,15,18,25,10};
+		int i1=0;
+		int j1=0;
+		while(i1<number.length) {
+			int count1=0;
+			while(j1<number.length) {
+				if(number[i1]==number[j1])
+				{
+					count1++;
+				}
+				j1++;
+			}
+			if(count1==1){
+				System.out.println(" while Non-reapeating no are "+number[i1]);
+				}
+			i1++;
+		}
+		
+		for(int i=0;i<number.length;i++)
+		{	int count=0;
+			for(int j=0;j<number.length;j++)
+			{
+				if(number[i]==number[j])
+				{
+					count++;
+				}
+			}
+			if(count==1){
+			System.out.println(" Non-reapeating no are "+number[i]);
+			}
+		}
+
+	}
+
+}

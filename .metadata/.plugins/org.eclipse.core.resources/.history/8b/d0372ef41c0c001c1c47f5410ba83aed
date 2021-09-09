@@ -1,0 +1,22 @@
+package findduplicate;
+
+public class Abc {
+	private static Abc obj;
+	
+	private Abc() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static Abc getInstance() {
+		
+		if(obj==null) {
+			obj= new Abc();
+			return obj;
+		}
+		else {
+			return obj;
+		}
+	}
+
+
+}

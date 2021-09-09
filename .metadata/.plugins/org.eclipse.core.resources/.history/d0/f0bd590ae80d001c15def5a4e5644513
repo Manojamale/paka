@@ -1,0 +1,21 @@
+package demo;
+
+@FunctionalInterface
+interface intraf{
+	int square(int a);
+}
+public class SimpleLambda {
+	
+//	public int square(int a) {
+//		return a*a;
+//	}
+
+	public static void main(String[] args) {
+		
+//		SimpleLambda s=new SimpleLambda();
+		
+//		System.out.println(s.square(5));
+//		System.out.println(s.square(6));
+	}
+
+}

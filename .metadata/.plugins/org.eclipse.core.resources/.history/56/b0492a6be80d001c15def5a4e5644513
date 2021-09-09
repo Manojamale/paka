@@ -1,0 +1,32 @@
+package demo;
+
+import java.util.function.IntFunction;
+
+@FunctionalInterface
+interface Intraf{
+	int square(int a);
+}
+public class SimpleLambda {
+	
+//	public int square(int a) {
+//		return a*a;
+//	}
+
+	public static void main(String[] args) {
+		
+		IntFunction<Integer> s=i->i*i;
+		System.out.println("square is "+s.apply(5));
+		System.out.println("square is "+s.square(25));
+		
+//		Intraf s=i->i*i;
+//		System.out.println("square is "+s.square(5));
+//		System.out.println("square is "+s.square(25));
+		
+		
+//		SimpleLambda s=new SimpleLambda();
+		
+//		System.out.println(s.square(5));
+//		System.out.println(s.square(6));
+	}
+
+}
