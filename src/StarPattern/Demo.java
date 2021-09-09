@@ -10,7 +10,7 @@ public class Demo {
 			System.out.println(s);
 			s=s.concat("*");
 		}
-	System.out.println("main end");
+	// @@@@
 		
 	}
 
