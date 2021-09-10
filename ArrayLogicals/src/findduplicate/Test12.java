@@ -29,7 +29,7 @@ public class Test12 {
 			if(count==0) {
 				System.out.println("nonrepeting no "+array[i]);
 			}
-
+			System.out.println("connected with github");
 		}
 	}
 
